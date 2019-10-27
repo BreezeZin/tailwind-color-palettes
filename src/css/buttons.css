@@ -1,0 +1,41 @@
+.button {
+  @apply select-none px-4 py-2 border rounded;
+
+  &--primary {
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+
+    &:hover {
+      background-color: #0069d9;
+      border-color: #0062cc;
+    }
+    &:active {
+      background-color: #0062cc;
+      border-color: #005cbf;
+    }
+    &:focus {
+      box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);
+    }
+  }
+
+  &--light {
+    color: #212529;
+    background-color: #f8f9fa;
+    border-color: #f8f9fa;
+
+    &:hover {
+      color: #212529;
+      background-color: #e2e6ea;
+      border-color: #dae0e5;
+    }
+    &:active {
+      color: #212529;
+      background-color: #dae0e5;
+      border-color: #d3d9df;
+    }
+    &:focus {
+      box-shadow: 0 0 0 0.2rem rgba(216, 217, 219, 0.5);
+    }
+  }
+}
