@@ -19,7 +19,6 @@ commands here
 
 # TODO:
 
-- git commit & push
 - netlify host
 - finish readme with instructions
 - add github link

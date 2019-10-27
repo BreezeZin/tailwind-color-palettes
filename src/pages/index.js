@@ -34,7 +34,10 @@ const IndexPage = () => (
       </div>
     </div>
     <div className="p-4 border-t text-gray-600 bg-gray-200 flex justify-center hover:text-gray-800">
-      <a href="https://github.com" className="flex items-center">
+      <a
+        href="https://github.com/BreezeZin/tailwind-color-palettes"
+        className="flex items-center"
+      >
         <svg
           className="w-8 h-8 fill-current mr-2"
           xmlns="http://www.w3.org/2000/svg"
