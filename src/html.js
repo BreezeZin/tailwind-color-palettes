@@ -2,6 +2,22 @@ import React from "react"
 import PropTypes from "prop-types"
 
 export default function HTML(props) {
+  /*
+   * Prevent inline styling for styles.css as it is very
+   * large because of all the classes tailwinds need to generate
+   */
+  if (process.env.NODE_ENV === "production") {
+    for (const component of props.headComponents) {
+      if (component.type === "style") {
+        const index = props.headComponents.indexOf(component)
+        const link = (
+          <link rel="stylesheet" href={component.props["data-href"]} />
+        )
+        props.headComponents.splice(index, 1, link)
+      }
+    }
+  }
+
   return (
     <html {...props.htmlAttributes}>
       <head>
