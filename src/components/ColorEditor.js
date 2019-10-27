@@ -1,7 +1,9 @@
 import React, { Component } from "react"
-import Pickr from "@simonwep/pickr"
 import "@simonwep/pickr/dist/themes/classic.min.css"
 import { getColor, setColor, validHexFormat } from "../util/colors"
+
+// Need to check for window to prevent SSR throwing error
+const Pickr = typeof window !== `undefined` ? require("@simonwep/pickr") : null
 const classNames = require("classnames")
 const { colorVar } = require("../../colors")
 
