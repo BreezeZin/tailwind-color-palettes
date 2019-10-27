@@ -16,6 +16,7 @@ module.exports = {
     borderStyle: ["responsive", "hover", "focus", "active"],
   },
   plugins: [
+    require("@tailwindcss/custom-forms"),
     function({ addUtilities, addComponents }) {
       // create root pseudo-class with css variables
       const colorVariables = {}
