@@ -2,6 +2,8 @@
 
 Select from a list of custom color palettes to copy into your [Tailwind CSS](https://tailwindcss.com) config file.
 
+[https://breezezin.github.io/tailwind-color-palettes/](https://breezezin.github.io/tailwind-color-palettes/)
+
 ## Editor
 
 Visual Studio Code
