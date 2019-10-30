@@ -35,7 +35,7 @@ const IndexPage = () => (
     </div>
     <div className="p-4 border-t text-gray-600 bg-gray-200 flex justify-center hover:text-gray-800">
       <a
-        href="https://breezezin.github.io/tailwind-color-palettes/"
+        href="https://github.com/BreezeZin/tailwind-color-palettes"
         className="flex items-center"
       >
         <svg
