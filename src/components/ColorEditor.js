@@ -5,7 +5,7 @@ import { getColor, setColor, validHexFormat } from "../util/colors"
 // Need to check for window to prevent SSR throwing error
 const Pickr = typeof window !== `undefined` ? require("@simonwep/pickr") : null
 const classNames = require("classnames")
-const { colorVar } = require("../../colors")
+const { colorVar, alternatives } = require("../../colors")
 
 class ColorEditor extends Component {
   constructor(props) {
@@ -39,12 +39,17 @@ class ColorEditor extends Component {
   }
 
   createPickrInstance = (weight, currentColor) => {
+    let swatches = []
+    if (alternatives.hasOwnProperty(this.props.name)) {
+      swatches = alternatives[this.props.name]
+    }
     return Pickr.create({
       el: `#color-${weight}`,
       container: "#pickr-container",
       theme: "classic",
       useAsButton: true,
       default: currentColor,
+      swatches: swatches,
       components: {
         palette: true,
         preview: true,
