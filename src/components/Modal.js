@@ -15,7 +15,7 @@ class Modal extends Component {
     return (
       <div className="flex justify-center items-center fixed inset-0 z-10">
         <div
-          className="bg-black fixed opacity-50 w-full h-full"
+          className="bg-black fixed opacity-50 w-full h-full inset-0"
           onClick={closeModal}
         ></div>
         <div className="border bg-white relative z-20 flex flex-col modal">
