@@ -19,6 +19,7 @@
     "gatsby-plugin-react-helmet": "^3.1.13",
     "gatsby-plugin-sharp": "^2.2.31",
     "gatsby-source-filesystem": "^2.1.33",
+    "gh-pages": "^2.1.1",
     "html-loader": "^0.5.5",
     "js-beautify": "^1.10.2",
     "loadjs": "^4.0.1",
@@ -46,7 +47,8 @@
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing \""
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing \"",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public"
   },
   "repository": {
     "type": "git",
