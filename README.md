@@ -17,11 +17,17 @@ Visual Studio Code
 
 ## Gatsby
 
-gatsby develop - build & watch for changes
+build & watch for changes:
 
-gatsby build - create production build
+`gatsby develop`
 
-gatsby serve - test production build locally
+create production build:
+
+`gatsby build`
+
+test production build locally:
+
+`gatsby serve`
 
 ## Colors
 
