@@ -4,10 +4,7 @@ const classNames = require("classnames")
 
 function PaletteList({ colors, selected, onSelected }) {
   return (
-    <div
-      className="overflow-auto flex flex-wrap  p-2"
-      style={{ maxHeight: "13.3125rem" }}
-    >
+    <div className="flex overflow-x-scroll p-1">
       {Object.entries(colors).map(([colorName, colorData], index) => {
         return (
           <div
