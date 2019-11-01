@@ -19,7 +19,7 @@ class Modal extends Component {
           onClick={closeModal}
         ></div>
         <div className="border bg-white relative z-20 flex flex-col modal">
-          <div className="border-b flex justify-between">
+          <div className="border-b flex justify-between flex-shrink-0">
             <h2 className="px-4 py-3 text-2xl">{title}</h2>
             <button
               className="w-12 flex justify-center items-center text-gray-500 hover:text-gray-700"
@@ -35,7 +35,7 @@ class Modal extends Component {
             </button>
           </div>
           <div className="px-4 py-3 overflow-auto">{children}</div>
-          <div className="px-4 py-3 border-t flex justify-end">
+          <div className="px-4 py-3 border-t flex justify-end flex-shrink-0">
             {footer}
             <button className="ml-2 button button--light" onClick={closeModal}>
               Close
