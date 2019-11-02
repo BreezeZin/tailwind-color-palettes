@@ -67,7 +67,12 @@ class Editor extends Component {
   }
 
   render() {
-    return <pre id="editor" style={{ height: "100%", width: "100%" }}></pre>
+    return (
+      <pre
+        id="editor"
+        style={{ height: "100%", width: "100%", minHeight: "25rem" }}
+      ></pre>
+    )
   }
 }
 
