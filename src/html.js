@@ -1,5 +1,6 @@
 import React from "react"
 import PropTypes from "prop-types"
+import { withPrefix } from "gatsby"
 
 export default function HTML(props) {
   /*
@@ -31,6 +32,11 @@ export default function HTML(props) {
         <link
           href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap"
           rel="stylesheet"
+        />
+        <link
+          rel="shortcut icon"
+          type="image/x-icon"
+          href={withPrefix("/favicon.ico")}
         />
       </head>
       <body {...props.bodyAttributes}>
